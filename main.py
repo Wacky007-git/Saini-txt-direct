@@ -141,7 +141,7 @@ image_urls = [
 cookies_file_path= "youtube_cookies.txt"
 
 
-@bot.on_message(filters.command(["drm"]))
+@bot.on_message(filters.command(["start"]))
 async def help_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         "<pre><code> 🎉 Welcome to DRM Bot! 🎉</code></pre>\n\n"
